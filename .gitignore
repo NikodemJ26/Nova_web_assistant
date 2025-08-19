@@ -1,0 +1,4 @@
+# .gitignore
+# Ignore environment files
+.env
+nova_env/

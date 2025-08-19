@@ -1,0 +1,165 @@
+/* Dodatkowe style niestandardowe */
+body {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    min-height: 100vh;
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
+}
+
+.card {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary {
+    background: #6366f1;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #4f46e5;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #7c3aed;
+    transform: translateY(-2px);
+}
+
+.conversation-container {
+    height: 300px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #4f46e5 #1e293b;
+    background: rgba(15, 23, 42, 0.5);
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.conversation-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.conversation-container::-webkit-scrollbar-track {
+    background: #1e293b;
+    border-radius: 4px;
+}
+
+.conversation-container::-webkit-scrollbar-thumb {
+    background: #4f46e5;
+    border-radius: 4px;
+}
+
+.message-user {
+    background: rgba(79, 70, 229, 0.2);
+    border-left: 3px solid #6366f1;
+}
+
+.message-assistant {
+    background: rgba(139, 92, 246, 0.2);
+    border-left: 3px solid #8b5cf6;
+}
+
+.message-system {
+    background: rgba(71, 85, 105, 0.2);
+    border-left: 3px solid #64748b;
+}
+
+.weather-icon {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.status-indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.status-online {
+    background: #10b981;
+}
+
+.status-offline {
+    background: #ef4444;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.listening-animation {
+    animation: pulse 1.5s infinite;
+}
+
+/* Animacja dla wiadomości */
+@keyframes messageAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-message {
+    animation: messageAppear 0.3s ease-out forwards;
+}
+
+/* Dymki konwersacyjne */
+.conversation-bubble {
+    border-radius: 18px;
+    padding: 12px 16px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.conversation-bubble:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+}
+
+.user-bubble {
+    background: rgba(79, 70, 229, 0.2);
+    border-left: 3px solid #6366f1;
+    margin-left: 20px;
+}
+
+.assistant-bubble {
+    background: rgba(139, 92, 246, 0.2);
+    border-left: 3px solid #8b5cf6;
+    margin-right: 20px;
+}
+
+.system-bubble {
+    background: rgba(71, 85, 105, 0.2);
+    border-left: 3px solid #64748b;
+}
