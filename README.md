@@ -1,6 +1,6 @@
 # Asystent Nowa – Projekt hobbystyczny
 
-**Asystent Nowa** to polski asystent głosowy z nowoczesnym interfejsem webowym. Pozwala na obsługę codziennych zadań za pomocą mowy i panelu www.  
+**Asystent Nowa** to polski asystent głosowy z nowoczesnym interfejsem webowym. Pozwala na obsługę codziennych zadań za pomocą mowy i panelu www .  
 Projekt powstał z pasji do nowych technologii i jest rozwijany hobbystycznie – kod tworzę sam, ucząc się programowania na bieżąco.
 
 ---
@@ -79,4 +79,4 @@ Przejdź do [http://localhost:5000](http://localhost:5000) w przeglądarce.
 
 ## Licencja
 
-Projekt udostępniony jest na zasadach open source – możesz korzystać, uczyć się i
+Projekt udostępniony jest na zasadach open source – możesz korzystać, uczyć się i bawić.
